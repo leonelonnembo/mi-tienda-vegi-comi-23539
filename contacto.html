@@ -10,29 +10,42 @@
     <header>
         <nav>
             <ul>
+                <li><img class="logo" src="img/logo1.png" alt="Logo Mi mundo Vega" ></li>
                 <li><a href="home.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
                 <li><a href="nosotros.html">Sobre nosotros</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <section>
-            <h1>Contacta con nosotros</h1>
+            <h1>Contactate con nosotros.</h1>
             <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
             
-            <form action="#" method="post" id="contact-form">
-                <!-- Agrega aquí los campos del formulario -->
-            </form>
-        </section>
-    </main>
+            <form id="form"
+            action="https://formspree.io/f/xayglppn"
+            method="POST"
+            >
+            <label>
+                Tu email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Tu mensaje:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
 
-    <footer>
-        <!-- Pie de página con Grid Layout (como se mostró anteriormente) -->
-    </footer>
+<footer>
+    <!-- Pie de página con Grid Layout (como se mostró anteriormente) -->
+</footer>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
