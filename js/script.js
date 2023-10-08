@@ -1,19 +1,45 @@
-const $form = document.querySelector('#form')
+const $form = document.querySelector('#form');
 
-$form.addEventListener("submit", handleSubmit)
+$form.addEventListener("submit", handleSubmit);
 
 async function handleSubmit(event) {
-    event.preventDefault()
-    const form = new FormData(this)
-    const response = await fetch(this.action, {
-        method: this.method,
+    event.preventDefault();
+
+    const emailInput = $form.querySelector('input[name="email"]');
+    const messageInput = $form.querySelector('textarea[name="message"]');
+    
+    if (emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+        // Muestra una notificación de error si los campos están vacíos
+        Swal.fire(
+            'Error',
+            'Por favor, completa todos los campos obligatorios.',
+            'error'
+        );
+        return; // Detiene el envío del formulario si hay errores
+    }
+
+    // Realiza el envío del formulario si pasa la validación
+    const form = new FormData($form);
+    const response = await fetch($form.action, {
+        method: $form.method,
         body: form,
         headers: {
             'Accept': 'application/json'
         }
-    }) 
-   if (response.ok) {
-    this.reset()
-    alert('Gracias por contactarte con nosotros, nos comunicaremos contigo en la brevedad')
-   }
+    });
+
+    if (response.ok) {
+        $form.reset();
+        Swal.fire(
+            'Gracias por contactarnos.',
+            'Nos comunicaremos contigo pronto.',
+            'success'
+        );
+    } else {
+        Swal.fire(
+            'Error',
+            'Hubo un problema al enviar el formulario.',
+            'error'
+        );
+    }
 }

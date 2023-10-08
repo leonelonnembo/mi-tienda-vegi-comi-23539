@@ -153,6 +153,15 @@ button[type="submit"]:hover {
     background-color: #3fa242; /* Cambia el color de fondo al pasar el mouse */
 }
 
+.parrafo-centrado {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Centra el elemento en el eje horizontal */
+    max-width: 400px; /* Ancho máximo del párrafo para que no sea demasiado ancho en pantallas grandes */
+    padding: 30px;
+    color: black;
+    
+}
+
 /* Estilos específicos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
     nav ul {
