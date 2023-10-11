@@ -7,12 +7,13 @@ async function handleSubmit(event) {
 
     const emailInput = $form.querySelector('input[name="email"]');
     const messageInput = $form.querySelector('textarea[name="message"]');
+    const nameInput = $form.querySelector('input[name="name"]')
     
-    if (emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+    if (emailInput.value.trim() === '' || messageInput.value.trim() === '' ||  nameInput.value.trim() === '') {
         // Muestra una notificación de error si los campos están vacíos
         Swal.fire(
-            'Error',
-            'Por favor, completa todos los campos obligatorios.',
+            'Atención',
+            'Por favor, complete todos los campos obligatorios.',
             'error'
         );
         return; // Detiene el envío del formulario si hay errores
