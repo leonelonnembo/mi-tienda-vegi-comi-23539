@@ -130,6 +130,7 @@ label {
 
 /* Estilos para los campos de entrada de texto y textarea */
 input[type="email"],
+input[type="text"],
 textarea {
     width: 100%; /* Ancho completo del campo de entrada */
     padding: 5px; /* Espaciado interno */
@@ -152,7 +153,10 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #3fa242; /* Cambia el color de fondo al pasar el mouse */
 }
-
+.obligatorio {
+    color: red; /* Cambia el color del asterisco a rojo */
+    margin-left: 5px; /* Ajusta el espaciado entre el campo y el asterisco */
+  }
 .parrafo-centrado {
     text-align: center; /* Centra el texto horizontalmente */
     margin: 0 auto; /* Centra el elemento en el eje horizontal */
@@ -161,6 +165,7 @@ button[type="submit"]:hover {
     color: black;
     
 }
+
 
 /* Estilos específicos para pantallas pequeñas */
 @media screen and (max-width: 768px) {

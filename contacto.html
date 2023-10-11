@@ -10,7 +10,7 @@
     <header>
         <nav>
             <ul>
-                <li><img class="logo" src="img/logo1.png" alt="Logo Mi mundo Vega" ></li>
+                <li><img class="logo" src="img/logo.png" alt="Logo Mi mundo Vega" ></li>
                 <li><a href="home.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="#">Contacto</a></li>
@@ -32,11 +32,18 @@
             method="POST"
             >
             <label>
-                Tu email:
+                Email:
+                <span class="obligatorio">*</span>
                 <input type="email" name="email">
             </label>
             <label>
-                Tu mensaje:
+                Nombre:
+                <span class="obligatorio">*</span>
+                <input type="text" name="name">
+            </label>
+            <label>
+                Mensaje:
+                <span class="obligatorio">*</span>
                 <textarea name="message"></textarea>
             </label>
             <!-- your other form fields go here -->
