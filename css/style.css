@@ -1,3 +1,8 @@
+/* Agrega Roboto Condensed como fuente */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+
 /* Estilos generales para todos los elementos */
 * {
     margin: 0;
@@ -6,33 +11,33 @@
 
 /* Estilos generales para todo el contenido */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0e2; /* Fondo gris claro */
-    color: #333; /* Texto negro */
-    margin: 0; /* Elimina márgenes predeterminados del cuerpo */
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f0f0e2;
+    color: #333;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh ;
+    min-height: 100vh;
 }
 
 /* Estilos para el encabezado y el pie de página */
 header {
     position: sticky;
-    background-color: #64c27b; /* Fondo verde */
-    color: black; /* Texto blanco */
+    background-color: #64c27b;
+    color: black;
     padding: 10px;
-    display: grid; /* Activa Grid Layout */
-    grid-gap: 20px; /* Espacio entre las columnas */
-    align-items: center; /* Centra verticalmente */
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
 }
 
 footer {
     margin-top: auto;
     width: 100%;
-    background-color: #64c27b; /* Fondo verde */
-    color: black; /* Texto negro */
-    padding: 10px 0; /* Espaciado interno del pie de página */
-    text-align: center; /* Centra el contenido del pie de página */
+    background-color: #64c27b;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
 }
 
 /* Estilo para el logo en el encabezado (colocado en el centro) */
@@ -41,7 +46,7 @@ h1 {
     padding: 10px;
     margin-bottom: 20px;
     color: rgb(2, 2, 2);
-    background-color:  #48a35f;
+    background-color: #48a35f;
 }
 
 h2 {
@@ -58,10 +63,10 @@ p {
 }
 
 .logo {
-    max-width: 100px; /* Ancho máximo de la imagen */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente en la barra de navegación */
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Aplicar Flexbox a la lista de productos */
@@ -70,19 +75,17 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    margin-bottom: 30px; /* Aumenta el margen inferior para agregar espacio entre productos y footer */
+    margin-bottom: 30px;
 }
 
 .product {
     width: calc(30% - 30px);
-    margin-bottom: 40px; /* Aumenta el margen inferior entre productos */
+    margin-bottom: 40px;
     margin-top: 50px;
     background-color: rgb(250, 250, 250);
     border: 1px solid rgb(0, 0, 0);
     padding: 10px;
-    /* Estilos para los productos, como colores, tipografía, etc. */
 }
-
 
 /* Estilos para la lista de navegación */
 nav ul {
@@ -90,92 +93,178 @@ nav ul {
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centra verticalmente los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Estilos para los elementos de la lista */
 nav li {
-    margin: 0 20px; /* Añade espacio horizontal entre elementos */
-    text-align: center; /* Centra el texto dentro de los elementos */
-    flex: 1; /* Distribuye el espacio de manera uniforme en pantallas pequeñas */
+    margin: 0 20px;
+    text-align: center;
+    flex: 1;
 }
 
 /* Estilos para los enlaces */
 nav a {
     text-decoration: none;
-    color: black; /* Texto blanco para los enlaces */
+    color: black;
     font-weight: bold;
 }
 
 /* Estilos para los enlaces al pasar el mouse */
 nav a:hover {
-    background-color: #3fa242; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #3fa242;
 }
 
 /* Estilos para el formulario */
 form {
-    max-width: 400px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    max-width: 400px;
+    margin: 0 auto;
     margin-bottom: 90px;
-    padding: 20px; /* Espaciado interno */
-    background-color: #f4f4f4; /* Fondo gris claro */
-    border: 1px solid #ccc; /* Borde gris */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilos para las etiquetas de los campos */
 label {
-    display: block; /* Hace que las etiquetas sean bloques para alinearlas correctamente */
-    margin-bottom: 10px; /* Espacio entre etiquetas */
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* Estilos para los campos de entrada de texto y textarea */
 input[type="email"],
 input[type="text"],
 textarea {
-    width: 100%; /* Ancho completo del campo de entrada */
-    padding: 5px; /* Espaciado interno */
-    margin-bottom: 15px; /* Espacio inferior entre campos */
-    border: 1px solid #ccc; /* Borde gris */
-    border-radius: 3px; /* Bordes redondeados */
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 /* Estilos para el botón de enviar */
 button[type="submit"] {
-    background-color: #4bbd4f; /* Fondo verde */
-    color: #fff; /* Texto blanco */
-    padding: 10px 20px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 3px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    background-color: #4bbd4f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 /* Estilos para el botón de enviar al pasar el mouse */
 button[type="submit"]:hover {
-    background-color: #3fa242; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #3fa242;
 }
 
 .obligatorio {
-    color: red; /* Cambia el color del asterisco a rojo */
-    margin-left: 5px; /* Ajusta el espaciado entre el campo y el asterisco */
+    color: red;
+    margin-left: 5px;
 }
 
 .parrafo-centrado {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin: 0 auto; /* Centra el elemento en el eje horizontal */
-    max-width: 400px; /* Ancho máximo del párrafo para que no sea demasiado ancho en pantallas grandes */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px;
     padding: 30px;
     color: black;
 }
 
-/* Estilos específicos para pantallas pequeñas */
-@media screen and (max-width: 768px) {
+/* Estilos para pantallas de PC (escritorio) */
+@media screen and (min-width: 1024px) {
+    .logo {
+        max-width: 120px;
+    }
+
     nav ul {
-        flex-direction: column; /* Cambia la dirección de los elementos en pantallas pequeñas */
+        flex-direction: row;
     }
+
     nav li {
-        margin: 10px 0; /* Añade espacio vertical entre elementos en pantallas pequeñas */
+        margin: 0 20px;
+        text-align: center;
     }
+
+    .product-list {
+        justify-content: space-between;
+    }
+
+    .product {
+        width: calc(30% - 30px);
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para pantallas de celular (móvil) */
+@media screen and (max-width: 767px) {
+    .logo {
+        max-width: 80px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .product {
+        width: calc(50% - 20px);
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para pantallas de tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .logo {
+        max-width: 100px;
+    }
+}
+
+/* Animación de crecimiento y reducción para el logo */
+@keyframes scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Aplica la animación al logo */
+.logo {
+    animation: scale 2s infinite; /* Duración de la animación y repetición infinita */
 }
