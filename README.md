@@ -1,5 +1,7 @@
 # Documentación Preliminar de Mi Mundo Vega
 
+## Url de la pagina: https://mi-tienda-vegi.netlify.app
+
 ## Descripción del Proyecto
 Mi Mundo Vega es un sitio web dedicado a la promoción y venta de productos cosméticos veganos. La plataforma se enfoca en ofrecer una amplia variedad de productos de belleza que son respetuosos con los animales y el medio ambiente. En esta documentación preliminar, se detallarán aspectos importantes relacionados con el desarrollo de este proyecto.
 
