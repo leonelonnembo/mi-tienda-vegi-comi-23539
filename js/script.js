@@ -50,16 +50,33 @@ async function handleSubmit(event) {
 
     const emailInput = $form.querySelector('input[name="email"]');
     const messageInput = $form.querySelector('textarea[name="message"]');
-    const nameInput = $form.querySelector('input[name="name"]')
+    const nameInput = $form.querySelector('input[name="name"]');
+
+    // Validar correo electrónico con una expresión regular
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     
-    if (emailInput.value.trim() === '' || messageInput.value.trim() === '' ||  nameInput.value.trim() === '') {
-        // Muestra una notificación de error si los campos están vacíos
+    if (emailInput.value.trim() === '' || 
+        messageInput.value.trim() === '' || 
+        nameInput.value.trim() === '' || 
+        !emailPattern.test(emailInput.value)) {
+        // Muestra una notificación de error si los campos están vacíos o el correo no es válido
         Swal.fire(
             'Atención',
-            'Por favor, complete todos los campos obligatorios.',
+            'Por favor, complete todos los campos obligatorios y proporcione un correo electrónico válido.',
             'error'
         );
         return; // Detiene el envío del formulario si hay errores
+    }
+
+    // Validar longitud del nombre y mensaje (puedes ajustar los límites según tus necesidades)
+    if (nameInput.value.length < 2 || nameInput.value.length > 50 || 
+        messageInput.value.length < 10 || messageInput.value.length > 500) {
+        Swal.fire(
+            'Atención',
+            'El nombre debe tener entre 2 y 50 caracteres, y el mensaje debe tener entre 10 y 500 caracteres.',
+            'error'
+        );
+        return;
     }
 
     // Realiza el envío del formulario si pasa la validación
@@ -87,4 +104,3 @@ async function handleSubmit(event) {
         );
     }
 }
-
