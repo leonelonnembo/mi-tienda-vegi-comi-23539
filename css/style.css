@@ -26,9 +26,10 @@ header {
     background-color: #64c27b;
     color: black;
     padding: 10px;
-    display: grid;
-    grid-gap: 20px;
-    align-items: center;
+    display: flex; /* Cambia display a flex */
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 footer {
@@ -56,6 +57,7 @@ h2 {
 p {
     padding: 10px;
     color: black;
+    
 }
 .iframe-container {
     display: flex;
