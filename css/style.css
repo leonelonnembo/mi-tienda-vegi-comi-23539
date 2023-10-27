@@ -57,6 +57,13 @@ p {
     padding: 10px;
     color: black;
 }
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #f0f0e2;
+}
 
 .title {
     color: aquamarine;
