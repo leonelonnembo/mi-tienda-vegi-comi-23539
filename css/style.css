@@ -51,12 +51,13 @@ h1 {
 }
 
 h2 {
-    padding: 10px;
+    text-align: center;
 }
 
 p {
-    padding: 10px;
-    color: black;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
     
 }
 .iframe-container {
