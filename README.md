@@ -1,5 +1,7 @@
 # Documentación Preliminar de Mi Mundo Vega
 
+# Trabajo realizado por: Florencia Perez, Luciana Krizmancic y Leonel Onnembo 
+
 ## URL del Sitio Web
 - [Mi Mundo Vega](https://mi-tienda-vegi.netlify.app)
 
